@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Special+Elite&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url("../images/background.png");
+    overflow: hidden;
+}
+
+.gameContainer{
+
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 50px;
+    right: 95px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Special Elite', cursive;
+    background-color: yellow;
+    border: 2px;
+    border-style: double;
+    border-color: black;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 110px;
+    right: 55px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Special Elite', cursive;
+    background-color: yellow;
+    border: 2px;
+    border-style: double;
+    border-color: black;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+#gameBox{
+    background: url('../images/gameBox.png');
+    width: 90vmin;
+    height: 90vmin;
+    border: 5px outset green;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(20,1fr);
+    grid-template-columns: repeat(20,1fr);
+}
+
+img{
+    border:2px outset rgb(87, 87, 214);
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+.key1{
+    position: absolute;
+    bottom: 150px;
+    right: 150px;
+}
+
+.key2{
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+}
+
+.key3{
+    position: absolute;
+    bottom: 60px;
+    right: 150px;
+}
+
+.key4{
+    position: absolute;
+    bottom: 60px;
+    right: 240px;
+}
+
+.head{
+    background-color: yellow;
+    border: 5px solid green;
+    border-radius: 4px;    
+}
+
+.snake{
+    background: linear-gradient(green,greenyellow);
+    border: 2px solid greenyellow;
+    border-radius: 20px;
+}
+
+.food{
+    background: linear-gradient(red,#e66465);
+    border: 5px solid red;
+    border-radius: 20px;
+
+}
+
+@media only screen and (max-width: 800px){
+
+    #scoreBox{
+        top: 70px;
+        right: 35px;
+        font-size: 35px;
+    }
+    
+    #hiscoreBox{
+        top: 160px;
+        right: 35px;
+        font-size: 35px;
+    }
+
+    img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .key1{
+        bottom: 80px;
+        right: 45%;
+    }
+    
+    .key2{
+        bottom: -9px;
+        right: 34%;
+    }
+    
+    .key3{
+        bottom: -9px;
+        right: 45%;
+    }
+    
+    .key4{
+        bottom: -9px;
+        right: 56%;
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+
+    #scoreBox{
+        right: 70px;
+        right: 35px;
+        font-size: 25px;
+    }
+    
+    #hiscoreBox{
+        top: 130px;
+        right: 35px;
+        font-size: 25px;
+    }
+
+    img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .key1{
+        bottom: 80px;
+        right: 42%;
+    }
+    
+    .key2{
+        bottom: 0px;
+        right: 22%;
+    }
+    
+    .key3{
+        bottom: 0px;
+        right: 42%;
+    }
+    
+    .key4{
+        bottom: 0px;
+        right: 62%;
+    }
+
+}
