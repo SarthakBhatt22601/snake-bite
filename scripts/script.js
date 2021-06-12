@@ -4,7 +4,7 @@ const foodSound = new Audio('music/food.mp3');
 const gameOverSound = new Audio('music/gameover.mp3');
 const moveSound = new Audio('music/move.mp3');
 
-let speed = 12;
+let speed = 14;
 let score = 0;
 let hiscore = 0;
 let lastPaintTime = 0;
@@ -55,7 +55,7 @@ function gameEngine(){
         score += 1;
         if(score > hiscore){
             hiscore += 1;
-            hiscoreBox.innerHTML = "Hiscore : " + hiscore;
+            hiscoreBox.innerHTML = "High score : " + hiscore;
         }
         scoreBox.innerHTML = "Score : " + score;
         snakeArr.push({x:snakeArr[0].x + inputDir.x , y:snakeArr[0].y + inputDir.y});
