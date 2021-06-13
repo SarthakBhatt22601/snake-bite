@@ -4,7 +4,7 @@ const foodSound = new Audio('music/food.mp3');
 const gameOverSound = new Audio('music/gameover.mp3');
 const moveSound = new Audio('music/move.mp3');
 
-let speed = 14;
+let speed = 13;
 let score = 0;
 let hiscore = 0;
 let lastPaintTime = 0;
@@ -55,7 +55,7 @@ function gameEngine(){
         score += 1;
         if(score > hiscore){
             hiscore += 1;
-            hiscoreBox.innerHTML = "High score : " + hiscore;
+            hiscoreBox.innerHTML = "High Score : " + hiscore;
         }
         scoreBox.innerHTML = "Score : " + score;
         snakeArr.push({x:snakeArr[0].x + inputDir.x , y:snakeArr[0].y + inputDir.y});
@@ -100,28 +100,24 @@ function gameEngine(){
 //move functions
 function arrowUp(){
     moveSound.play();
-    console.log("ArrowUp");
     inputDir.x = 0;
     inputDir.y = -1;
 }
 
 function arrowDown(){
     moveSound.play();
-    console.log("ArrowDown");
     inputDir.x = 0;
     inputDir.y = 1;
 }
 
 function arrowLeft(){
     moveSound.play();
-    console.log("ArrowLeft");
     inputDir.x = -1;
     inputDir.y = 0;
 }
 
 function arrowRight(){
     moveSound.play();
-    console.log("ArrowRight");
     inputDir.x = 1;
     inputDir.y = 0;
 }

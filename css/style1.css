@@ -91,14 +91,14 @@ img{
 }
 
 .head{
-    background-color: yellow;
-    border: 5px solid green;
+    background: linear-gradient(green,yellow);
+    border: 5px solid white;
     border-radius: 4px;    
 }
 
 .snake{
     background: linear-gradient(green,greenyellow);
-    border: 2px solid greenyellow;
+    border: 2px solid white;
     border-radius: 20px;
 }
 
